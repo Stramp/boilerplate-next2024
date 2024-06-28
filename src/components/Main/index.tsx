@@ -1,7 +1,10 @@
 import * as S from './styles'
-const Main = () => (
+interface MainTypes {
+  title: string
+}
+const Main = ({ title = 'React Avançado' }: MainTypes) => (
   <S.Wrapper>
-    <h1>React Avançado</h1>
+    <h1>{title}</h1>
   </S.Wrapper>
 )
 
